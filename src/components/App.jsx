@@ -11,3 +11,8 @@ function App() {
   return (
     <div className="container">
    {userIsRegisterd=== true? <Login/>: <Register/>}
+    </div>
+  );
+}
+
+export default App;
