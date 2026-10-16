@@ -1,16 +1,17 @@
 import React from 'react'
-import Input from "./Input"
 
-const Login = () => {
+const Form = (props) => {
   return (
-    <div>
          <form className="form">
-       <Input type="text" placeholder="Username"/>
-      <Input type="password" placeholder="Password"/>
-        <button type="submit">Register</button>
+       <input type="text" placeholder="Username"/>
+      <input type="password" placeholder="Password"/>
+       <input type="password" placeholder="Password"/>
+
+        <button type="submit">
+          {props. isRegisterd ? "Login": "Register" }
+        </button>
       </form>
-    </div>
   )
 }
 
-export default Login
+export default Form;

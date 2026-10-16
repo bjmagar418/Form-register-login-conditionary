@@ -1,16 +1,17 @@
 import React from "react";
-import Login from "./Login"
-import Register from "./Register";
+import Form from "./Form";
 
 
-const userIsRegisterd =false;
+const userIsRegisterd =true;
 
 
 
 function App() {
   return (
     <div className="container">
-   <Form/>
+   <Form
+   isRegisterd = {userIsRegisterd}
+   />
     </div>
   );
 }
